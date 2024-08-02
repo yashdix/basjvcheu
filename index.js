@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 // POST endpoint
-app.post('/submit', (req, res) => {
+app.post('/bfhl', (req, res) => {
     const { data } = req.body;
 
     if (!Array.isArray(data)) {
@@ -40,7 +40,7 @@ app.post('/submit', (req, res) => {
 });
 
 // GET endpoint
-app.get('/operation_code', (req, res) => {
+app.get('/bfhl', (req, res) => {
     const operationCode = {
         operation_code: 'OP123456'
     };
